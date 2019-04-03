@@ -4,6 +4,8 @@ background-color: lightblue;
 p {
   text-align: center;
   color: red;
+  border: 1px solid darkblue;
+  padding: 30px;
 }
 h1 {
   color: navy;
