@@ -11,3 +11,12 @@ h1 {
   color: navy;
   margin-left: 20px;
 }
+a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
