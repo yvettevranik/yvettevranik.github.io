@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;title&gt;CSS Template&lt;/title&gt;</p>
+<p class="p1">&lt;meta charset="utf-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1">* {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>box-sizing: border-box;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">body {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-family: Arial, Helvetica, sans-serif;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Style the header */</p>
+<p class="p1">header {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-color: #666;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 30px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 35px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Container for flexboxes */</p>
+<p class="p1">section {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: -webkit-flex;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>display: flex;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Style the navigation menu */</p>
+<p class="p1">nav {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>-webkit-flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>-ms-flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex: 1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background: #ccc;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 20px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Style the list inside the menu */</p>
+<p class="p1">nav ul {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>list-style-type: none;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 0;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Style the content */</p>
+<p class="p1">article {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>-webkit-flex: 3;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>-ms-flex: 3;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>flex: 3;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-color: #f1f1f1;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 10px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Style the footer */</p>
+<p class="p1">footer {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>background-color: #777;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>padding: 10px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>color: white;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */</p>
+<p class="p1">@media (max-width: 600px) {</p>
+<p class="p1"><span class="Apple-converted-space">  </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>-webkit-flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>flex-direction: column;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;h2&gt;CSS Layout Flexbox&lt;/h2&gt;</p>
+<p class="p1">&lt;p&gt;In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;Resize the browser window to see the responsive effect.&lt;/p&gt;</p>
+<p class="p1">&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Flexbox is not supported in Internet Explorer 10 and earlier versions.&lt;/p&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Cities&lt;/h2&gt;</p>
+<p class="p1">&lt;/header&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;nav&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#"&gt;London&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#"&gt;Paris&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#"&gt;Tokyo&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;article&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;London&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;London is the capital city of England. It is the most populous city in the<span class="Apple-converted-space">  </span>United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/article&gt;</p>
+<p class="p1">&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Footer&lt;/p&gt;</p>
+<p class="p1">&lt;/footer&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
