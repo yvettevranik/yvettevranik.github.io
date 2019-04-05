@@ -20,15 +20,20 @@ body, html {
 body {
 background-color: lightblue;
 }
-p {
+
+h1 {
+  font-size:300%;
+    text-align: center;
+  color: navy;
+  margin-left: 20px;
+}
+
+h2 {
+  font-size:160%;
   text-align: center;
   color: red;
   border: 1px solid darkblue;
   padding: 30px;
-}
-h1 {
-  color: navy;
-  margin-left: 20px;
 }
 
 ul {
