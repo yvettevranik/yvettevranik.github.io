@@ -117,12 +117,22 @@ body {font-family: "Lato", sans-serif;}
 }
 
 .footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   height: 65px;
-   width: 100%;
-   background-color: midnightblue;
-   color: white;
-   text-align: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  background-color: midnightblue;
+  color: white;
+  text-align: center;
 }
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20%;
+}
+
