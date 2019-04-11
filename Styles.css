@@ -134,5 +134,7 @@ body {font-family: "Lato", sans-serif;}
   flex-direction: row;
   justify-content: space-between;
   width: 20%;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
