@@ -64,11 +64,9 @@ button {
   float: left;
   color: cyan;
   text-align: center;
-  padding: 10px 7px;
+  padding: 14x 16px;
   text-decoration: none;
-  font-size: 17px;
-    height: 10%;
-  width: 60%;
+  font-size: 20px;
 }
 
 .topnav a:hover {
