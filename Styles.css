@@ -71,6 +71,7 @@ button {
 .topnav a:hover {
   background-color: navy;
   color: white;
+  font-size:40px;
 }
 
 .active {
