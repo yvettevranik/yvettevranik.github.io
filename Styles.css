@@ -64,10 +64,7 @@ button {
   float: left;
   color: cyan;
   text-align: center;
-  padding-top: 30px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
+  padding: 14x 16px;
   text-decoration: none;
   font-size: 40px;
     margin-top: 25px;
