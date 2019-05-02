@@ -48,6 +48,10 @@ p {
   color: cyan;
 }
 
+.href {
+  color: white;
+}
+
 button {
   height: 100px;
   width: 100px;
