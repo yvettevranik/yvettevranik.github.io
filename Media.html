@@ -142,6 +142,44 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+  
+  .topnav a {
+  float: left;
+  color: cyan;
+  text-align: center;
+  padding: 14x 14px;
+  text-decoration: none;
+  font-size: 30px;
+    margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.topnav a:hover {
+  background-color: navy;
+  color: white;
+  font-size:32px;
+  
+}
+
+.active {
+  background-color: navy;
+  color: white;
+}
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+
+
+/* Clear floats after the tab */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 </style>
 <body>
   
@@ -157,7 +195,7 @@ img.hover-shadow {
 
 <div class="row">
   <div class="column">
-    <img src="images/band 1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    <img src="images/band 1.jpg" style="width:128px;height:128px;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
   </div>
   <div class="column">
     <img src="images/band 2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
