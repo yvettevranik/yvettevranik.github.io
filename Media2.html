@@ -123,7 +123,53 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <p>In this example, we use CSS to create a modal (dialog box) that is hidden by default.</p>
 <p>We use JavaScript to trigger the modal and to display the current image inside the modal when it is clicked on. Also note that we use the value from the image's "alt" attribute as an image caption text inside the modal.</p>
 
-<img id="myImg" src="images/concert3.jpeg" alt="Concert Berlin" style="width:100%;max-width:300px">
+          
+          <div class="row">
+  <div class="column">
+    <img src="images/band 1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/band 2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/band 3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/band 4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+  
+  <div class="row">
+  <div class="column">
+    <img src="images/concert.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/concert2.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/concert3.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="images/cold_play.jpeg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+    
+          
+ <div class="row">
+ <div class="column">
+          
+<img id="myImg" src="images/band 1.jpg" alt="Concert Berlin" style="width:100%;max-width:300px">
+    </div>
+  <div class="column">
+    <img id="myImg" src="images/band 2.jpg" alt="Concert Tokyo" style="width:100%;max-width:300px">
+  </div>
+  <div class="column">
+    <img id="myImg" src="images/band 3.jpg" alt="Concert New York" style="width:100%;max-width:300px">
+  </div>
+  <div class="column">
+    <img id="myImg" src="images/band 4.jpg" alt="Concert Sidney" style="width:100%;max-width:300px"> 
+  </div>
+</div>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
