@@ -142,49 +142,53 @@ body {font-family: Arial, Helvetica, sans-serif;}
  <div class="row">
  <div class="column">
           
-<img id="myImg" src="images/band 1.jpg" alt="Concert Berlin" style="width:100%;max-width:300px">
+   
+   <img class="light-box-image" src="images/band 1.jpg" alt="Concert Berlin" style="width:100%;max-width:300px">
     </div>
   <div class="column">
-    <img id="myImg" src="images/band 2.jpg" alt="Concert Tokyo" style="width:100%;max-width:300px">
+ <img class="light-box-image" src="images/band 2.jpg" alt="Concert Tokyo" style="width:100%;max-width:300px">
   </div>
   <div class="column">
-    <img id="myImg" src="images/band 3.jpg" alt="Concert New York" style="width:100%;max-width:300px">
-  </div>
+<img class="light-box-image" src="images/band 3.jpg" alt="Concert New York" style="width:100%;max-width:300px">
 </div>
           
    <div class="row">
  <div class="column">
-<img id="myImg" src="images/concert.jpeg" alt="Concert Berlin" style="width:100%;max-width:300px">
+<img class="light-box-image" src="images/concert.jpeg" alt="Concert Berlin" style="width:100%;max-width:300px">
     </div>
   <div class="column">
-    <img id="myImg" src="images/concert2.jpeg" alt="Concert Tokyo" style="width:100%;max-width:300px">
+<img class="light-box-image" src="images/concert2.jpeg" alt="Concert Tokyo" style="width:100%;max-width:300px">
   </div>
   <div class="column">
-    <img id="myImg" src="images/concert3.jpeg" alt="Concert New York" style="width:100%;max-width:300px">
+<img class="light-box-image"  src="images/concert3.jpeg" alt="Concert New York" style="width:100%;max-width:300px">
   </div>
 </div>
-          
-          
+         
+             
 <!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
+   <div id="myModal" class="modal" style="display: block;">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01" src="file:///C:/Users/yvranik/Downloads/images/band%202.jpg">
+  <div id="caption">Concert Tokyo</div>
 </div>
-
-<script>
+   
+   
+   <script>
 // Get the modal
 var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
+var images = document.getElementsByClassName('light-box-image');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
+// Interate through each item and add a click handler
+Array.prototype.forEach.call(images, function(image) {
+  image.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+});
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
