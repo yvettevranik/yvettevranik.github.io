@@ -53,7 +53,7 @@ button {
   height: 100px;
   width: 100px;
   font-size: 20px;
-  
+
 }
 
 .topnav {
@@ -78,7 +78,7 @@ button {
   background-color: navy;
   color: white;
   font-size:32px;
-  
+
 }
 
 .active {
@@ -147,4 +147,3 @@ body {font-family: "Lato", sans-serif;}
   margin-bottom: 20px;
     text-color: white;
 }
-
