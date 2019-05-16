@@ -13,59 +13,38 @@
     <div class="topnav">
   <a class="active" href="Index.html">Index</a>
   <a href="About.html">About</a>
-  <a href="Media.html">Media</a>
+  <a href="Media2.html">Media</a>
   <a href="Discography.html">Discography</a>
   <a href="Merchandise.html">Merchandise</a>
   <a href="TourDates.html">Tour Dates</a>
 
 </div>
   
-  <h2>Discography</h2>
-<p>Select location to find out more</p>
+  <h2>Upcoming Tour Dates</h2>
+<h2>Basic HTML Table</h2>
 
-<div class="tab">
-  <button class="tablinks" onmouseover="openCity(event, 'London')">London</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Paris')">Paris</button>
-  <button class="tablinks" onmouseover="openCity(event, 'Tokyo')">Tokyo</button>
-</div>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <ul>
-  <li>Tour Date: 4 December 2019</li>
-  <li>Venue: Map</li>
-  <li>Tickets</li>
-</ul>  
-</div>
-
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
-</div>
-
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
-
-<div class="clearfix"></div>
-
-<script>
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-  
-  </body>
-  
+</body>
 </html>
