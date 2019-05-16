@@ -17,12 +17,16 @@ th, td {
   color: lightblue;
 }
     
-    div {
-  column-count: 3;
+.column {
+  float: left;
+  width: 33.33%;
 }
-    
-    div {
-  column-gap: 30px;
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
     
 </style>
