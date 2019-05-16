@@ -1,5 +1,4 @@
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 
  <html>
 <head>
@@ -10,12 +9,10 @@
       
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
-
   
 .container {
   overflow: hidden;
 }
-
 .filterDiv {
   float: left;
   background-color: #2196F3;
@@ -26,12 +23,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
   margin: 2px;
   display: none; /* Hidden by default */
 }
-
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
 }
-
 /* Style the buttons */
 .btn {
   border: none;
@@ -42,20 +37,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background-color: #f1f1f1;
   cursor: pointer;
 }
-
 /* Add a light grey background on mouse-over */
 .btn:hover {
   background-color: #ddd;
 }
-
 /* Add a dark background to the active button */
 .btn.active {
   background-color: #666;
   color: white;
 }
-
-
-
 </style>
 </head>
 <body>
@@ -81,12 +71,18 @@ body {font-family: Arial, Helvetica, sans-serif;}
   <div class="filterDiv T-shirts">
     <img src="images/concert.jpeg" style="width:100%">
   </div>
-  <div class="filterDiv T-shirts">Orange</div>
-  <div class="filterDiv T-shirts">Volvo</div>
-  <div class="filterDiv T-shirts">Red</div>
-  <div class="filterDiv Hoodies">Mustang</div>
-  <div class="filterDiv Hoodies">Blue</div>
-  <div class="filterDiv Hoodies">Cat</div>
+  <div class="filterDiv colors fruits">Orange</div>
+  <div class="filterDiv cars">Volvo</div>
+  <div class="filterDiv colors">Red</div>
+  <div class="filterDiv cars animals">Mustang</div>
+  <div class="filterDiv colors">Blue</div>
+  <div class="filterDiv animals">Cat</div>
+  <div class="filterDiv animals">Dog</div>
+  <div class="filterDiv fruits">Melon</div>
+  <div class="filterDiv fruits animals">Kiwi</div>
+  <div class="filterDiv fruits">Banana</div>
+  <div class="filterDiv fruits">Lemon</div>
+  <div class="filterDiv animals">Cow</div>
 </div>
   
   
@@ -102,7 +98,6 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
 }
-
 // Show filtered elements
 function w3AddClass(element, name) {
   var i, arr1, arr2;
@@ -114,7 +109,6 @@ function w3AddClass(element, name) {
     }
   }
 }
-
 // Hide elements that are not selected
 function w3RemoveClass(element, name) {
   var i, arr1, arr2;
@@ -127,7 +121,6 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
 // Add active class to the current control button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
@@ -138,7 +131,6 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
     </script>
 
 </body>
