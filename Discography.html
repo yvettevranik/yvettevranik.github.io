@@ -9,6 +9,12 @@
    
     <style>
       
+      .container {
+      width:100%;
+      margin:auto;
+      padding-top=50px;
+      padding-bottom: 50px;
+      }
  
       
     /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -60,6 +66,21 @@
       
       .row {margin-top: 5px;
       }
+      
+      /* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
     </style>
   
   </head>
@@ -72,7 +93,11 @@
   <a href="Discography.html">Discography</a>
   <a href="Merchandise.html">Merchandise</a>
   <a href="TourDates.html">Tour Dates</a>
-
+      
+      <div class="container">
+      
+        <div class="row">
+          <div class="column">
     <div class="flip-card" >
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -101,15 +126,15 @@
     </div>
   </div>
 </div>
+  
     
-    
-    <div class="row">
     <div class="spotify">
             <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DWXF8Nf1uycDZ" width="400" height="380" 
       frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
  
-        
+      
+        <div class="column">
            <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -143,7 +168,7 @@
           <iframe src="https://open.spotify.com/embed/album/3cfAM8b8KqJRoIzt3zLKqw" width="350" height="390" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
 
-        
+        <div class="column">
            <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
@@ -171,7 +196,6 @@
   </div>
 </div>
     
-    <div class="row">
     <div class="spotify">
             <iframe src="https://open.spotify.com/embed/album/6ZG5lRT77aJ3btmArcykra" width="350" height="390" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>"
       frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
