@@ -7,6 +7,22 @@
 <link rel="stylesheet" type="text/css" href="CSS/Styles.css">
   
   <style>
+  
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
@@ -74,13 +90,24 @@ th, td {
   </tr>
   
 </table>
-    
-      <div>
+
+
+<div class="grid-container">
+
         <div>
-      <img src="images/concert_large.jpg" alt="Large Concert" width="2000" height="600">
+      <img src="images/concert_large.jpg" alt="Large Concert" width="400" height="400">
         </div
-             </div>
-   
+        
+
+        <div>
+      <img src="images/concert_large.jpg" alt="Large Concert" width="400" height="400">
+        </div
+
+        <div>
+      <img src="images/concert_large.jpg" alt="Large Concert" width="400" height="400">
+        </div
+      
+   </div>
   
 
 
