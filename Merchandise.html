@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="CSS/Styles.css">
- 
-      
+
+
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
-  
+
 .container {
   overflow: hidden;
 }
@@ -52,14 +52,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <body>
 
 
-    <div class="topnav">
+<div class="topnav">
   <a class="active" href="Index.html">Home</a>
   <a href="About.html">About</a>
   <a href="Media2.html">Media</a>
   <a href="Discography.html">Discography</a>
   <a href="Merchandise.html">Merchandise</a>
   <a href="TourDates.html">Tour Dates</a>
-
+</div>
 <div id="myBtnContainer">
   <button class="btn" onclick="filterSelection('T-shirts')"> T-shirts</button>
   <button class="btn" onclick="filterSelection('Hoodies')"> Hoodies</button>
@@ -69,38 +69,38 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <div class="container">
   <div class="filterDiv T-shirts">
 <img src="images/colorful_logo.jpg"
- alt="Colorful Logo" width="100" height="90"> 
+ alt="Colorful Logo" width="100" height="90">
   </div>
- 
+
 <div class="filterDiv T-shirts">
  <img src="images/ghost_stories.jpg"
- alt="Ghost Stories" width="100" height="90"> 
+ alt="Ghost Stories" width="100" height="90">
  </div>
- 
+
  <div class="filterDiv T-shirts">
  <img src="images/head_dreams.jpg"
-       alt="Head Dreams" width="100" height="90"> 
+       alt="Head Dreams" width="100" height="90">
  </div>
- 
- 
+
+
   <div class="filterDiv Hoodies">
    <img src="images/colorful_logo2.jpg"
- alt="Colorful Logo2" width="100" height="90"> 
+ alt="Colorful Logo2" width="100" height="90">
  </div>
- 
+
    <div class="filterDiv Hoodies">
   <img src="images/ghost_stories2.jpg"
- alt="Ghost Stories2" width="100" height="90"> 
+ alt="Ghost Stories2" width="100" height="90">
  </div>
- 
+
    <div class="filterDiv Hoodies">
     <img src="images/head_dreams2.jpg"
-       alt="Head Dreams2" width="100" height="90"> 
+       alt="Head Dreams2" width="100" height="90">
  </div>
- 
+
 </div>
-  
-  
+
+
   <script>
   filterSelection("all")
 function filterSelection(c) {
@@ -131,7 +131,7 @@ function w3RemoveClass(element, name) {
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
   }
   element.className = arr1.join(" ");
